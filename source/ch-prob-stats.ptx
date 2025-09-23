@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-prob-stats" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Analysis</title>
+  <title>Probability and Statistics</title>
 
   <introduction>
     <p> Paradox showing defining a length function is non-trivial. </p>
