@@ -3,6 +3,27 @@
 <section xml:id="sec-measure-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Starting Measure Theory</title>
 
-  <p> Text of section. </p>
+  <p> Suppose we want to define a function <m>\lambda(A)</m> to represent the length of the
+  real subset <m>A\subset\mathbb{R}</m>. We intuitively expect <m>\lambda</m> to satisfy the following properties:</p>
+  <p>
+    <ol marker="(a)">
+      <li>
+        <p><m>\lambda(A)</m> is defined for any <m>A\subset\mathbb{R}</m></p>
+      </li>
+      <li>
+        <p><m>\lambda((a,b])=b-a</m> for any <m>a,b\in\mathbb{R}</m> where <m>a\lt b</m></p>
+      </li>
+      <li>
+        <p><m>0\leq\lambda(A)\leq\infty</m> for any <m>A\subset\mathbb{R}</m></p>
+      </li>
+      <li>
+        <p><m>\lambda(\cup_{i=1}^\infty A_i) = \sum_{i=1}^\infty \lambda(A_i)</m> 
+          for any collection <m>\{A_i : i\in\mathbb{N}\}</m> of pairwise disjoint sets</p>
+      </li>
+      <li>
+        <p><m>\lambda(A+x) = \lambda(A+x)</m> is defined for any <m>x\in\mathbb{R}</m></p>
+      </li>
+    </ol>
+  </p>
 
 </section>
