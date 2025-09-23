@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-normal-dist-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Normal Distribution I</title>
+
+  <p> Imagine you are throwing darts onto the <m>\mathbb{R}^2</m>-plane,
+  aiming for the origin <m>(0,0)</m>. After hundereds of darts, what does
+  the plane look like?</p>
+  <p>
+    Assuming you're not a perfect shot, we would expect some variation -
+    a dense cluster at the centre that thins out
+    further away from the origin. We also expect the scattering to be <term>radially symmetric.</term>
+  </p>
+  <p>
+    Let <m>dA\subset\mathbb{R}^2</m> be a <em>small</em> region in the plane. We can
+    model the probability of a dart landing in <m>dA</m> as
+  </p>
+  <mdn xml:id="eqn-norm-1">
+    <mrow>\mathbb{P}(\text{dart lands in }dA) =\amp \phi(r)\lambda_2 (dA)</mrow>
+  </mdn>
+  <p>
+    where <m>\lambda_2(dA)</m> is the area of <m>dA</m> 
+    and <m>\phi</m> is some <term>monotone decreasing</term>
+    funtion 
+    <m>\mathbb{R}_{\geq 0}\rightarrow\mathbb{R}_{>0}</m>, with <m>r = \sqrt{x^2+y^2}</m> 
+    the distance away from the origin of a token point <m>(x,y)\in dA</m>.
+    Note that <m>\theta</m>
+    doesn't appear in our model due to radial symmetry.
+    
+  </p>
+  <aside>
+    <title>Is it measurable?</title>
+    <p>
+      <m>\lambda_2</m>
+      is known as the 2D Lebesgue measure. <em>Precisely</em> defining this function
+      has to be done with extreme care in order to 
+      avoid paradoxes caused by <em>certain difficult</em> 
+      (non-measurable) subsets of <m>\mathbb{R}^2</m>.
+      More detail can be found <url href="https://people.bath.ac.uk/masmdp/measdir.bho/notesp1to10.pdf">here</url>.
+    </p>
+    
+  </aside>
+  <p>
+    For a single dart, the <m>x</m> and <m>y</m> coordinates are
+    independent, allowing us to introduce 
+  </p>
+  <me>\mathbb{P}(\text{dart lands in }dA) = \phi(r)\lambda_2 (dA) = 
+    f(x)f(y)\lambda_2 (dA) 
+  </me>
+  <p>
+    where <m>f:\mathbb{R}_{\geq 0}\rightarrow\mathbb{R}_{>0}</m> is another monotone decreasing function, with the relation
+  </p>
+  <md>
+    <mrow>\phi(\sqrt{x^2+y^2}) =\amp f(x)f(y).</mrow>
+  </md>
+  <p>
+    Setting <m>y=0</m>, we have
+  </p><md>
+    <mrow>\phi(x) =\amp f(x)f(0) = \psi f(x)</mrow>
+  </md>
+  <p>
+    where <m>\psi = f(0) > 0</m> is some constant. Thus,
+  </p>
+  <md>
+    <mrow>\phi(\sqrt{x^2+y^2}) =\amp \psi f(\sqrt{x^2+y^2})
+      =f(x)f(y)
+    </mrow>
+  </md>
+  <p>
+    dividing through by <m>\psi^2</m>, we have
+  </p><md>
+    <mrow>\frac{1}{\psi}f(\sqrt{x^2+y^2})
+      =\amp \frac{1}{\psi}f(x)\frac{1}{\psi}f(y).</mrow>
+  </md>
+
+  <p>
+    Define <m>g:\mathbb{R}_{\geq 0}\rightarrow\mathbb{R}_{>0}</m> such that <m>g(x) = \frac{1}{\psi}f(x)</m>. 
+    We have that <m>g</m> satisfies
+    <me>g(\sqrt{x^2+y^2}) = g(x)g(y).</me>
+    Do we know what type of function <m>g</m> is likely to be? Can you think of an example?
+  </p>
+  
+  <!--<subsection xml:id="subsec-assumptions">
+    <title>Assumptions So Far</title>
+    <ol>
+      <li>
+        <p>
+          number 1
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsubsection xml:id="subsubsec-Assumptions-1">
+    <title>Assumptions-1</title>
+    <ol>
+      <li>
+        <p>
+          hello
+        </p>
+      </li>
+    </ol>
+  </subsubsection>
+  -->
+
+  <exercises xml:id="exercises-norm">
+  </exercises>
+  <exercise>
+    <p>
+      Find a function <m>h(x)</m> that satisfies
+      <men xml:id="eqn-norm-ex-1">h(x+y) = h(x)h(y).</men>
+      What is the general form of functions that satisfy <xref ref="eqn-norm-ex-1"/>?
+    </p>
+    <answer>
+      <p>
+        <me>h(x) = e^{Ax}</me>
+      </p>
+    </answer>
+  </exercise>
+  <exercise xml:id="ex-norm-1">
+    <p>
+      Find a function <m>g(x)</m> that satisfies
+      <men xml:id="eqn-norm-ex-2">g(\sqrt{x^2+y^2}) = g(x)g(y).</men>
+      What is the general form of functions that satisfy <xref ref="eqn-norm-ex-2"/>?
+    </p>
+    <hint>
+      <p>
+        Stay with exponentials!
+      </p>
+    </hint>
+    <answer>
+      <p>
+        <me>g(x) = e^{Ax^2}</me>
+      </p>
+    </answer>
+  </exercise>
+
+</section>
