@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-analysis" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Analysis</title>
+
+  <introduction>
+    <p> Paradox showing defining a length function is non-trivial. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-measure-1.ptx" />
+
+</chapter>
