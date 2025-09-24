@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-cute-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Cute Basics</title>
+
+  <introduction>
+    <p> Things I revised that felt life affirming. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-logs.ptx" />
+  <!-- Expectation and Variance properties-->
+  <!-- Hypothesis Testing-->
+  <!-- Z conversion for Normal dist, fast hypothesis testing by hand-->
+  
+
+  <!-- Ideas:
+   barnsley fern?
+   Physics?
+   Dijkstra's Algorithm?-->
+
+</chapter>

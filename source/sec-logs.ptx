@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-logs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title><m>\ln</m> in Integration</title>
+
+  <claim xml:id="claim-logs">
+    <statement>
+      <p>
+        <me>\int_1^x \frac{1}{t}dt = \ln(x)</me>
+        Where <m>\ln :\mathbb{R}^+\rightarrow\mathbb{R}</m> is the unique two-sided inverse of the bijective 
+        <m>\exp :\mathbb{R}\rightarrow\mathbb{R}^+</m>
+      </p>
+    </statement>
+  </claim>
+  <proof>
+    <p>
+      <alert>Right inverse:</alert>
+      let <m>f(x)=\int_1^x \frac{1}{t}dt</m> and <m>g(x) = e^{f(x)}</m>.
+      Then 
+      <md>
+        <mrow>\implies g'(x) =\amp f'(x)e^{f(x)}</mrow>
+        <mrow> =\amp \frac{1}{x}e^{f(x)}</mrow>
+        <mrow>\implies g''(x)=\amp f''(x)e^{f(x)} + f'(x)^2e^{f(x)}</mrow>
+        <mrow> =\amp -\frac{1}{x^2}e^{f(x)} + \frac{1}{x^2}e^{f(x)}</mrow>
+        <mrow> =\amp 0</mrow>
+      </md>
+    </p>
+    <p>
+      <m>g''(x) = 0</m> implies that <m>g'(x) = A</m> for some constant <m>A\in\mathbb{R}</m>.
+      Thus, we have
+      <me>g'(x) = g'(1) = \frac{1}{1}e^{f(1)} = 1.</me>
+      Which in turn implies that <m>g(x)=x+c</m> for some constant <m>c\in\mathbb{R}</m>. 
+      Evaluated at <m>x=1</m>, we have
+      <me>
+        g(1) = e^f(1) = 1 = 1 + c
+      </me>
+      Thus, <m>c=0</m> and we have that 
+      <me>
+        g = \text{id}
+      </me>
+      as required.
+    </p>
+  </proof>
+  
+
+</section>

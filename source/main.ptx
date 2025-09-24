@@ -12,9 +12,24 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
+    <xi:include href="./ch-cute-basics.ptx" />
     <xi:include href="./ch-analysis.ptx" />
+        <!-- Ideas:
+         Measure Theory
+         Theory of PDEs
+         Hilbert Spaces-->
     <xi:include href="./ch-prob-stats.ptx" />
+        <!-- Ideas:
+         Other derivations for distributions
+         p-test and s-tests?-->
 
+    <!-- Numerical Analysis-->
+        <!-- Ideas
+         Optimisation methods
+         Machine learning
+         Scientific Computing
+         Numerical Linear Algebra
+         -->
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
